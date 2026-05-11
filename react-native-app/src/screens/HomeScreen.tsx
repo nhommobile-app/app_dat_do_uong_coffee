@@ -1,6 +1,8 @@
 "use client"
 
+import { BASE_URL } from '../config/constants';
 import { useState, useEffect, useRef } from "react"
+
 import {
   StyleSheet,
   Text,
@@ -8,6 +10,7 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
+  
   ImageBackground,
   ActivityIndicator,
   Alert 
@@ -52,6 +55,8 @@ export default function HomeScreen() {
         setCategories(categoriesData)
 
         const bannersData = await getActiveBanners()
+        console.log('BANNERS DATA:', bannersData)
+        console.log('BASE_URL:', BASE_URL)
         setBanners(bannersData)
 
         const productsData = await getProducts()
@@ -110,6 +115,8 @@ export default function HomeScreen() {
       })
     }, 4000) // 4s mỗi slide
 
+
+
     return () => clearInterval(interval)
   }, [banners])
 
@@ -143,9 +150,25 @@ export default function HomeScreen() {
   }
 
   const handleAddToCart = (product: Product) => {
-    addToCart(product, 1, "M")
-    Alert.alert('Thành công',`Đã thêm ${product.name} vào giỏ hàng!`)
+  addToCart(product, 1, "M")
+  Alert.alert('Thành công',`Đã thêm ${product.name} vào giỏ hàng!`)
+}
+
+const getBannerImageUrl = (image?: string) => {
+  if (!image) return '';
+
+  const rawImage = String(image).trim();
+
+  if (rawImage.startsWith('http')) {
+    return rawImage;
   }
+
+  const cleanImage = rawImage
+    .replace(/^uploads[\\/]/, '')
+    .replace(/^\/+/, '');
+
+  return `${BASE_URL}/uploads/${cleanImage}`;
+};
 
   if (isLoading) {
     return (
@@ -196,10 +219,14 @@ export default function HomeScreen() {
                 }}
               >
                 <ImageBackground
-                  source={{ uri: banner.image }}
+                  source={{ uri: getBannerImageUrl(banner.image) }}
                   style={styles.promoContainer}
                   imageStyle={styles.promoImage}
-                >
+                 resizeMode="cover"
+                 onError={() => {
+                   console.log('Banner image error:', banner.image, getBannerImageUrl(banner.image))
+                 }}
+                 > 
                   {banner.title && (
                     <View style={styles.promoTag}>
                       <Text style={styles.promoTagText}>{banner.title}</Text>
