@@ -62,8 +62,7 @@ mobile-app-main/
 ├── backend/
 ├── react-native-app/
 ├── admin-web/
-├── db.sql
-└── backup_coffee_shop_db.sql
+├── database/
 ```
 
 ---
@@ -110,8 +109,8 @@ npm run dev
 # 🔑 Tài khoản Admin mặc định
 
 ```text
-Email: admin@gmail.com
-Password: 123456
+Email: dieuchauzz@gmail.com
+Password: 123456A@
 ```
 
 ---
