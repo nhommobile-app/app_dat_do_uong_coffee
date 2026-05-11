@@ -122,6 +122,20 @@ Password: 123456A@
 - Triển khai server online
 
 ---
+# Một số màn hình giao diện
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/5de3b903-cb3b-40ce-b64b-699622abfb6f" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/33bbcb17-ec93-4c28-afa0-d92a10c60304" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/d16a26f7-cfe3-4bf0-8936-aa2b7072b871" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/687944c6-c67b-43c4-b8b5-98cd36bafec2" />
+<img width="1200" height="3110" alt="image" src="https://github.com/user-attachments/assets/b54da0ff-02e0-4ae5-a62e-156d90b30a0a" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/eb46f39b-2b50-4d33-af92-e4e8944971f7" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/d9c21b28-3dc5-4259-b0ac-72d6122181c5" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/8a9b53e0-8d33-4f05-ac38-a3b886d6c85f" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/363dfc2f-7e79-4b41-bbef-4c184366a9a3" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/c3f743be-2ac0-469d-bd6e-9fa895be1273" />
+<img width="1200" height="3311" alt="image" src="https://github.com/user-attachments/assets/13a00e33-30e3-4771-bd3a-d169e102bb80" />
+<img width="1200" height="2664" alt="image" src="https://github.com/user-attachments/assets/688a701b-1ef4-49f3-b714-5e2297516367" />
+<img width="1200" height="3120" alt="image" src="https://github.com/user-attachments/assets/9b6310e4-3d7e-413d-a65b-0cb0fbebc747" />
 
 # 📌 GitHub Repository
 
