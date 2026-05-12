@@ -86,7 +86,7 @@ npm run dev
 ## Import Database
 
 - Tạo database: `coffee_shop_db`
-- Import file `db.sql`
+- Import file `backup_coffee_shop_db.sql`
 
 ## Chạy Mobile App
 
